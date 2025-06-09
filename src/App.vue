@@ -1,10 +1,11 @@
 <template>
   <h1>{{ message }}</h1>
-  <FoodItem />
-  <FoodItem />
-  <FoodItem />
-  <FoodItem />
-  <FoodItem />
+  <FoodItem  food-desc="Les pomes son vermelles" food-name="Apples"/>
+
+  <FoodItem  food-name="Apples" food-desc="Les pomes son vermelles"/>
+  <FoodItem  food-name="Pizzeta" food-desc="Les pizzes son italianes"/>
+  <FoodItem  food-name="Arroç" food-desc="L'arroç són hidrats"/>
+  <FoodItem  food-name="Pinya" food-desc="La pinya és on viu Bob Esponja"/>
 
 </template>
 
