@@ -16,6 +16,7 @@
 import FoodItem from './components/FoodItem.vue';
 
 export default {
+  emits: ['toggle-favorite'],
   data() {
     return {
       message: 'This is some text',
@@ -26,8 +27,8 @@ export default {
         { name: 'Pinya', desc: 'La pinya és on viu Bob Esponja' }
       ]
     };
-  }
-,methods: {
+  },
+  methods: {
     receiveEmit(foodName) {
       alert('Rebut l\'emissió de l\'esdeveniment toggle-favorite' + foodName);
     }
