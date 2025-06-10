@@ -13,6 +13,10 @@
   </template>
   
   <script>
+
+    import TodoItem from './components/TodoItem.vue';
+
+   
     export default {
       data() {
         return {
@@ -25,6 +29,9 @@
           this.items.push(this.newItem),
           this.newItem = '';
         }
-      }
+      }, 
+    components: {
+      TodoItem
+    }
     }
   </script>
