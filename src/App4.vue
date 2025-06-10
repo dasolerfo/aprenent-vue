@@ -4,7 +4,10 @@
     <button @click="toggleValue = !toggleValue">
       Switch component
     </button>
-    <component :is="activeComp"></component>
+    <KeepAlive>
+        <component :is="activeComp"></component>
+    </KeepAlive>
+    
   </template>
   
   <script>
@@ -26,4 +29,3 @@
       }
     }
   </script>
-  

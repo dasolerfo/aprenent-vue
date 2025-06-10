@@ -1,14 +1,41 @@
 <template>
     <div>
-        <h2>One!</h2>
-        <p>This is component one.</p>
+        <img :src="imgSrc">
+        <h2>Component One</h2>
+        <p>Choose food.</p>
+        <label>
+            <input type="radio" name="rbgFood" 
+            v-model="imgSrc" :value="'img_apple.svg'" /> 
+            Apple
+        </label>
+        <label>
+            <input type="radio" name="rbgFood" 
+            v-model="imgSrc" :value="'img_cake.svg'" /> 
+            Cake
+        </label>
     </div>
 </template>
 
-<script></script>
+<script>
+  export default {
+    data () {
+      return {
+        imgSrc: 'img_question.svg'
+      }
+    }
+  }
+</script>
 
 <style scoped>
     div {
         background-color: lightgreen;
     }
-</style>                  
+    img {
+        float: right;
+        height: 100px;
+        margin-top: 20px;
+    }
+    label:hover {
+        cursor: pointer;
+    }
+</style>         

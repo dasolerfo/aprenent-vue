@@ -1,14 +1,28 @@
 <template>
     <div>
-        <h2>Two!</h2>
-        <p>This is component two.</p>
+        <h2>Component Two</h2>
+        <input type="text" v-model="msg" placeholder="Write something...">
+        <p>Your message:</p>
+        <p><strong>{{ this.msg }}</strong></p>
     </div>
 </template>
 
-<script></script>
+<script>
+  export default {
+    data () {
+      return {
+        msg: ''
+      }
+    }
+  }
+</script>
 
 <style scoped>
     div {
         background-color: lightpink;
+    }
+    strong {
+      background-color: yellow;
+      padding: 5px;
     }
 </style>                  
