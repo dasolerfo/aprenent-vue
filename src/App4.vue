@@ -4,7 +4,7 @@
     <button @click="toggleValue = !toggleValue">
       Switch component
     </button>
-    <KeepAlive include="CompOne">
+    <KeepAlive include="CompOne" exclude="CompTwo" :max=2> 
         <component :is="activeComp"></component>
     </KeepAlive>
     
