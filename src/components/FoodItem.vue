@@ -4,6 +4,7 @@
       <h2>{{ foodName }}</h2>
       <p>{{ foodDesc }}</p>
       <p id="red">Click count: {{ clicks }}</p>
+      <button @click="toggleFavorite">Toggle Favorite</button>
     </div>
   </template>
   
@@ -19,6 +20,9 @@
     methods: {
       countClicks() {
         this.clicks++;
+      },
+      toggleFavorite() {
+            this.$emit('toggle-favorite', this.foodName);
       }
     },
     props: {
