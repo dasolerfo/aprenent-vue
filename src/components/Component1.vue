@@ -18,6 +18,7 @@
 
 <script>
   export default {
+    name: 'CompOne',
     data () {
       return {
         imgSrc: 'img_question.svg'
