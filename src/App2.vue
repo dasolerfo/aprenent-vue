@@ -1,4 +1,7 @@
 <template>
+    <h2>Slot</h2>
+    <slot-comp>Hello World!</slot-comp>
+
     <h3>Todo List</h3>  
     <ul>
       <todo-item
