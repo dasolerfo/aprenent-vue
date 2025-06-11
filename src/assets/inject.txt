@@ -1,0 +1,13 @@
+Podem passar dades entre components gràcies als mètodes provide i inject
+
+Per enviar les dades:
+  provide() {
+    return {
+      foods: this.foods
+    }
+  }
+
+Per agafar les dades:
+export default {
+    inject: ['foods']
+}
